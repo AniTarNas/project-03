@@ -1,0 +1,84 @@
+<div class="all">
+  <div class="content">
+    <div class="table">
+      <div class="table_header_flex uppercase">
+        <div>
+          {{id}} {{type}}/{{state}}/{{city}}/{{street}} փողոց
+        </div>
+        <div>
+          <ul>
+            <li *ngFor="let phone of phoneNumber">
+              {{phone}}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="table_bootom_flex">
+        <div class="part">
+          <p>Սենյակ</p>
+          <p>{{roomsCount}}</p>
+        </div>
+
+        <div class="part">
+          <p>Հ/Հ</p>
+          <p>{{floor}}</p>
+        </div>
+
+        <div class="part">
+          <p>Մակերես</p>
+          <p>{{area}}քմ</p>
+        </div>
+
+        <div class="part">
+          <p>Ներքին Հարդարանք</p>
+          <p>{{hardaranq}}</p>
+        </div>
+
+        <div class="part">
+          <p>Նախագիծ</p>
+          <p>{{naxagic}}</p>
+        </div>
+
+        <div class="part">
+          <p>Շենքի տեսակ</p>
+          <p>{{builtType}}</p>
+        </div>
+
+        <div class="part">
+          <p>Ծածկ</p>
+          <p>{{cack}}</p>
+        </div>
+
+        <div class="part">
+          <p>Առաստաղ</p>
+          <p>{{floor}}</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="content_flex">
+
+      <div class="img_and_data">
+        <p-galleria [images]="sImages" panelWidth="500" panelHeight="313" [showCaption]="true"></p-galleria>
+        <div class="text">
+          <ul>
+            <li *ngFor="let info of sAdditionalInfo">
+              {{info}}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="map_and_data">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH"></iframe>
+        <div class="text">
+          <p>{{contractType}} / Գինը` {{ price }}{{value}} / {{type}} {{roomsCount}}- սենյակների քանակ / {{area}} քմ</p>
+          <p>{{state}} / {{ city }} / {{ street }}</p>
+          <p *ngFor="let info of sOtherInfo">{{info}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

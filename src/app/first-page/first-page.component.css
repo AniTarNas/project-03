@@ -1,0 +1,248 @@
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px; }
+  .slider .img {
+    width: 100%;
+    max-height: 100%; }
+    .slider .img img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: center;
+      position: relative;
+      animation-name: example;
+      animation-duration: .3s;
+      animation-direction: reverse; }
+
+.prev, .next {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 36%; }
+
+.prev {
+  left: 10px;
+  background-image: url("../../assets/img/prev.png"); }
+
+.next {
+  right: 10px;
+  background-image: url("../../assets/img/next.png"); }
+
+@keyframes example {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+.all_tabs {
+  border-radius: 3px;
+  border: 1px solid darkgray;
+  position: relative;
+  padding: 15px 0;
+  margin: -50px auto 30px auto;
+  width: 95%;
+  background-color: #f5f5f5; }
+  .all_tabs .tabs_header {
+    margin-bottom: 25px; }
+    .all_tabs .tabs_header ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .all_tabs .tabs_header ul li.active {
+        background-color: #035290db; }
+      .all_tabs .tabs_header ul li {
+        cursor: pointer;
+        padding: 5px 10px;
+        background-color: #03529082;
+        color: white;
+        transition: 0.5s; }
+        .all_tabs .tabs_header ul li:hover {
+          background-color: #035290db; }
+        .all_tabs .tabs_header ul li > div {
+          width: 95%;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .all_tabs .tabs_header ul li > div img {
+            max-width: 35px;
+            margin-right: 5px; }
+
+.all_tabs .tabs_content {
+  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .all_tabs .tabs_content .all_width {
+    width: 100%; }
+  .all_tabs .tabs_content > div.part {
+    margin: 5px;
+    width: 15%; }
+    .all_tabs .tabs_content > div.part p-checkbox {
+      margin-right: 10px; }
+    .all_tabs .tabs_content > div.part button {
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      height: 100%;
+      background-color: #f66;
+      color: white;
+      transition: 0.5s; }
+      .all_tabs .tabs_content > div.part button:hover {
+        background-color: orangered; }
+  .all_tabs .tabs_content div.part:last-child {
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.all_maps {
+  border-radius: 3px;
+  border: 1px solid darkgray;
+  position: relative;
+  padding: 15px 0;
+  margin: 0 auto 30px auto;
+  width: 95%;
+  background-color: #f5f5f5; }
+  .all_maps .maps_category {
+    max-width: 95%;
+    margin: 0 auto 30px auto; }
+    .all_maps .maps_category ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .all_maps .maps_category ul li.active, .all_maps .maps_category ul li:not(:first-child):hover {
+        background: forestgreen; }
+      .all_maps .maps_category ul li:not(:first-child) {
+        padding: 0 10px;
+        border: 1px solid darkgray;
+        border-radius: 3px;
+        background: #C0ECAE;
+        cursor: pointer;
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+        transition: 0.5s; }
+        .all_maps .maps_category ul li:not(:first-child) img {
+          width: 20px;
+          margin-right: 10px; }
+  .all_maps .maps {
+    max-width: 95%;
+    margin: auto; }
+    .all_maps .maps iframe {
+      width: 100%;
+      height: 400px; }
+
+.found {
+  background-color: #f5f5f5;
+  border: 1px solid darkgray;
+  max-width: 95%;
+  margin: 0 auto 30px auto; }
+  .found .content {
+    padding: 30px 0;
+    max-width: 95%;
+    margin: auto; }
+    .found .content h3 {
+      margin-bottom: 25px; }
+    .found .content .top_flex ul {
+      display: flex;
+      flex-direction: column; }
+      .found .content .top_flex ul li {
+        border: 1px solid darkgray;
+        border-radius: 3px;
+        background-color: white;
+        margin: 10px 0; }
+        .found .content .top_flex ul li a {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-around; }
+          .found .content .top_flex ul li a .img {
+            min-width: 200px;
+            width: 25%;
+            height: 200px;
+            margin: 5px; }
+            .found .content .top_flex ul li a .img img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center; }
+          .found .content .top_flex ul li a .text {
+            width: 70%; }
+            .found .content .top_flex ul li a .text .addidional {
+              margin-bottom: 15px; }
+              .found .content .top_flex ul li a .text .addidional span {
+                font-weight: bold;
+                position: relative;
+                display: inline-block;
+                padding: 5px 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: left center; }
+              .found .content .top_flex ul li a .text .addidional span.attention {
+                background-image: url("../../assets/img/attention.png"); }
+              .found .content .top_flex ul li a .text .addidional span.map {
+                background-image: url("../../assets/img/location.png"); }
+              .found .content .top_flex ul li a .text .addidional span.info {
+                background-image: url("../../assets/img/check-mark-icon.png"); }
+            .found .content .top_flex ul li a .text .main_info {
+              border-top: 2px solid darkred;
+              padding-top: 15px; }
+              .found .content .top_flex ul li a .text .main_info span {
+                font-weight: bold;
+                display: inline-block;
+                padding: 5px 10px;
+                border-right: 2px solid darkred; }
+
+.top {
+  background-color: #f5f5f5;
+  border: 1px solid darkgray;
+  max-width: 95%;
+  margin: 0 auto 50px auto; }
+  .top .content {
+    padding: 30px 0;
+    max-width: 95%;
+    margin: auto; }
+    .top .content h3 {
+      margin-bottom: 25px; }
+    .top .content .top_flex ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .top .content .top_flex ul li {
+        overflow: hidden;
+        position: relative;
+        width: 30%;
+        min-width: 250px; }
+        .top .content .top_flex ul li a .img {
+          width: 100%;
+          height: 250px; }
+          .top .content .top_flex ul li a .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center; }
+        .top .content .top_flex ul li a:hover .text {
+          bottom: 0; }
+        .top .content .top_flex ul li a .text {
+          padding: 20px 0;
+          position: absolute;
+          bottom: -100%;
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 0.5s; }
+          .top .content .top_flex ul li a .text p {
+            max-width: 90%;
+            margin: auto; }
+
+/*# sourceMappingURL=first-page.component.css.map */

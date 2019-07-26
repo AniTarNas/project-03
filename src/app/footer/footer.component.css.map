@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,GAAG;EACD,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,OAAO;EACpB,KAAK,ECNgB,KAAK;EDO1B,gBAAgB,ECHK,OAAO;EDI5B,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EERb,OAAO,EAAC,IAAI;EACZ,cAAc,EAAC,GAAG;EAClB,eAAe,EAAC,MAAM;EACtB,WAAW,EAAE,MAAM",
+"sources": ["footer.component.scss","../../styles/variable.scss","../../styles/mixins.scss"],
+"names": [],
+"file": "footer.component.css"
+}

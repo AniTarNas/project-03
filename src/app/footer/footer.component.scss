@@ -1,0 +1,12 @@
+@import "../../styles/mixins";
+@import "../../styles/variable";
+
+div{
+  font-size: 50px;
+  font-family: Vivaldi;
+  color: $mainLightColor;
+  background-color: $mainDarkColor;
+  width: 100%;
+  height: 200px;
+  @include flex_center;
+}

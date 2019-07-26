@@ -1,0 +1,329 @@
+@import "../../styles/variable";
+
+//Slider CSS start
+.slider{
+  position: relative;
+  width: 100%;
+  height: $headerHeight;
+  .img{
+    width: 100%;
+    max-height: 100%;
+    img{
+      width: 100%;
+      height: $headerHeight;
+      object-fit: cover;
+      object-position: center;
+      position: relative;
+      animation-name: example;
+      animation-duration: .3s;
+      animation-direction: reverse;
+    }
+  }
+}
+.prev, .next{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 36%;
+}
+.prev{
+  left: 10px;
+  background-image: url("../../assets/img/prev.png");
+}
+.next{
+  right: 10px;
+  background-image: url("../../assets/img/next.png");
+}
+
+@keyframes example {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+//Slider CSS end
+
+//Tabs CSS start
+.all_tabs{
+  border-radius: $borderRadius;
+  border: $border;
+  position: relative;
+  padding: 15px 0;
+  margin: -50px auto 30px auto;
+  width: 95%;
+  background-color: $lightBackgroundColor;
+  .tabs_header{
+      margin-bottom: 25px;
+    ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li.active{
+        background-color: $darkBackgroundHoverColor;
+      }
+      li{
+        cursor: pointer;
+        padding: 5px 10px;
+        background-color: $darkBackgroundColor;
+        color: $mainLightColor;
+        transition: $transition;
+        &:hover{
+          background-color: $darkBackgroundHoverColor;
+        }
+        >div{
+          width: 95%;
+          margin:auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            max-width: 35px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.all_tabs{
+  .tabs_content{
+    padding-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .all_width{
+      width: 100%;
+    }
+
+    >div.part{
+      margin:5px;
+      width: 15%;
+
+      p-checkbox{
+        margin-right: 10px;
+      }
+
+      button{
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        height: 100%;
+        background-color: #f66;
+        color: $mainLightColor;
+        transition: $transition;
+        &:hover{
+          background-color: orangered;
+        }
+      }
+    }
+    div.part:last-child{
+      height: 30px;
+      position: absolute;
+      bottom:0;
+      left:50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+//Tabs CSS end
+
+//All Maps Section CSS start
+.all_maps{
+  border-radius: $borderRadius;
+  border: $border;
+  position: relative;
+  padding: 15px 0;
+  margin:0 auto 30px auto;
+  width: 95%;
+  background-color: $lightBackgroundColor;
+  .maps_category{
+    max-width: 95%;
+    margin:0 auto 30px auto;
+    ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li:first-child{
+
+      }
+      li.active, li:not(:first-child):hover{
+        background: forestgreen;
+      }
+      li:not(:first-child){
+        padding: 0 10px;
+        border: $border;
+        border-radius: $borderRadius;
+        background: #C0ECAE;
+        cursor: pointer;
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+        transition: $transition;
+        img{
+          width: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .maps{
+    max-width: 95%;
+    margin:auto;
+    iframe{
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+//All Maps Section CSS end
+
+//All Found HTML start
+.found{
+  background-color: $lightBackgroundColor;
+  border: $border;
+  max-width: 95%;
+  margin: 0 auto 30px auto;
+  .content{
+    padding: 30px 0;
+    max-width: 95%;
+    margin:auto;
+    h3{
+      margin-bottom: 25px;
+    }
+    .top_flex{
+      ul{
+        display: flex;
+        flex-direction: column;
+        li{
+          border:$border;
+          border-radius: $borderRadius;
+          background-color: $mainLightColor;
+          margin: 10px 0;
+          a{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            .img{
+              min-width: 200px;
+              width: 25%;
+              height: 200px;
+              margin: 5px;
+              img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+            .text{
+              width: 70%;
+              .addidional{
+                margin-bottom: 15px;
+                span{
+                  font-weight: bold;
+                  position: relative;
+                  display: inline-block;
+                  padding:5px 30px;
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-position: left center;
+                }
+                span.attention{
+                  background-image: url("../../assets/img/attention.png");
+                }
+                span.map{
+                  background-image: url("../../assets/img/location.png");
+                }
+                span.info{
+                  background-image: url("../../assets/img/check-mark-icon.png");
+                }
+              }
+              .main_info{
+                border-top: 2px solid darkred;
+                padding-top: 15px;
+                span{
+                  font-weight: bold;
+                  display: inline-block;
+                  padding:5px 10px;
+                  border-right: 2px solid darkred;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//All Found HTML end
+
+//All top CSS start
+.top{
+  background-color: $lightBackgroundColor;
+  border: $border;
+  max-width: 95%;
+  margin:0 auto 50px auto;
+  .content{
+    padding: 30px 0;
+    max-width: 95%;
+    margin:auto;
+    h3{
+      margin-bottom: 25px;
+    }
+    .top_flex{
+      ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        li{
+          overflow: hidden;
+          position: relative;
+          width: 30%;
+          min-width: 250px;
+          a{
+            .img{
+              width: 100%;
+              height: 250px;
+              img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+            &:hover .text{
+              bottom: 0;
+            }
+            .text{
+              padding: 20px 0;
+              position: absolute;
+              bottom: -100%;
+              width: 100%;
+              background-color: rgba(255,255, 255,0.5);
+              transition: $transition;
+              p{
+                max-width: 90%;
+                margin: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//All top CSS end

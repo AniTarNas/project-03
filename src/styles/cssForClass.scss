@@ -1,0 +1,10 @@
+@import "variable";
+
+.content{
+  max-width: $contentMaxWidth;
+  width: $contentWidth;
+  margin: auto;
+}
+.uppercase{
+  text-transform: uppercase;
+}

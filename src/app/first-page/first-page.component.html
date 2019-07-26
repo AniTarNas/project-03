@@ -1,0 +1,766 @@
+<!--Slider HTML Start-->
+<div class="slider">
+  <div class="img" *ngFor="let image of images, let i = index">
+    <img src="{{image.url}}" alt="" *ngIf = "i === visibleImageNumber">
+  </div>
+  <div class="prev" (click)="prev()"></div>
+  <div class="next" (click)="next()"></div>
+</div>
+<!--Slider HTML end-->
+
+<!--Tabs HTML start-->
+<div class="all_tabs">
+  <div class="content">
+
+    <div class="tabs_header">
+      <ul>
+        <li *ngFor="let building of buildingTypes, let i = index" class="uppercase" (click)="show(i)" [ngClass]="{'active': i === visibleTabNumber}">
+          <div>
+            <img src="{{building.url}}" alt="">
+            {{building.title}}
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tabs_content" *ngIf="visibleTabNumber === 0">
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" [options]="contractTypes" [(ngModel)]="selectedContractType" defaultLabel="Գործարքի տեսակ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" (onChange)="changeState()" [options]="allStates" [(ngModel)]="selectedStates" defaultLabel="Մարզ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" (onChange)="changeStreets()" [options]="allChangeCityes" [(ngModel)]="selectedCity" defaultLabel="Քաղաք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allYerevanParts" (onChange)="yeravanPartsChange()" [(ngModel)]="selectedYerevanPart" defaultLabel="Համայնք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allStreets" [(ngModel)]="selectedAllStreets" defaultLabel="Փողոց"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" [options]="builtTypes" [(ngModel)]="selectedBuiltType" defaultLabel="Շենքի տեսակ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="roomsCount" [(ngModel)]="selectedRoomsCount" defaultLabel="Սենյակների քանակ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="areaMeters" [(ngModel)]="selectedAreaMeters" defaultLabel="Մակերես քմ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="priceStart" [(ngModel)]="selectedPriceStart" [selectionLimit]="1" defaultLabel="Գինը (սկսած)"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="priceEnd" [(ngModel)]="selectedPriceEnd" [selectionLimit]="1" defaultLabel="Գինը (մինչև)"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="value" [(ngModel)]="selectedValue" [selectionLimit]="1" defaultLabel="Արժույթ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-checkbox [(ngModel)]="newBoolean" binary="false"></p-checkbox>Նորակառույց
+      </div>
+
+      <div class="part">
+        <button (click)="searchBnakaran()">Փնտրել</button>
+      </div>
+    </div>
+
+    <div class="tabs_content" *ngIf="visibleTabNumber === 1">
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" [options]="contractTypes" [(ngModel)]="selectedContractType" defaultLabel="Գործարքի տեսակ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" (onChange)="changeState()" [options]="allStates" [(ngModel)]="selectedStates" defaultLabel="Մարզ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" (onChange)="changeStreets()" [options]="allChangeCityes" [(ngModel)]="selectedCity" defaultLabel="Քաղաք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allYerevanParts" (onChange)="yeravanPartsChange()" [(ngModel)]="selectedYerevanPart" defaultLabel="Համայնք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allStreets" [(ngModel)]="selectedAllStreets" defaultLabel="Փողոց"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="roomsCount" [(ngModel)]="selectedRoomsCount" defaultLabel="Սենյակների քանակ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="siteArea" [(ngModel)]="selectedSiteArea" defaultLabel="Հողի մակերես"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="areaMeters" [(ngModel)]="selectedAreaMeters" defaultLabel="Մակերես քմ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="placeFloor" [(ngModel)]="selectedPlaceFloor" defaultLabel="Հարկայնություն"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="priceStart" [(ngModel)]="selectedPriceStart" [selectionLimit]="1" defaultLabel="Գինը (սկսած)"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="priceEnd" [(ngModel)]="selectedPriceEnd" [selectionLimit]="1" defaultLabel="Գինը (մինչև)"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="value" [(ngModel)]="selectedValue" [selectionLimit]="1" defaultLabel="Արժույթ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <button (click)="searchArandznatun()">Փնտրել</button>
+      </div>
+    </div>
+
+    <div class="tabs_content" *ngIf="visibleTabNumber === 2">
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" [options]="contractTypes" [(ngModel)]="selectedContractType" defaultLabel="Գործարքի տեսակ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" (onChange)="changeState()" [options]="allStates" [(ngModel)]="selectedStates" defaultLabel="Մարզ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" (onChange)="changeStreets()" [options]="allChangeCityes" [(ngModel)]="selectedCity" defaultLabel="Քաղաք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allYerevanParts" (onChange)="yeravanPartsChange()" [(ngModel)]="selectedYerevanPart" defaultLabel="Համայնք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allStreets" [(ngModel)]="selectedAllStreets" defaultLabel="Փողոց"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="actualUse" [(ngModel)]="selectedActualUse" defaultLabel="Փաստացի օգտագործում"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="siteArea" [(ngModel)]="selectedSiteArea" defaultLabel="Հողի մակերես"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="areaMeters" [(ngModel)]="selectedAreaMeters" defaultLabel="Շինության մակերես"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="priceStart" [(ngModel)]="selectedPriceStart" [selectionLimit]="1" defaultLabel="Գինը (սկսած)"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="priceEnd" [(ngModel)]="selectedPriceEnd" [selectionLimit]="1" defaultLabel="Գինը (մինչև)"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="value" [(ngModel)]="selectedValue" [selectionLimit]="1" defaultLabel="Արժույթ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <button (click)="searchKomercion()">Փնտրել</button>
+      </div>
+    </div>
+
+    <div class="tabs_content" *ngIf="visibleTabNumber === 3">
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" [options]="contractTypes" [(ngModel)]="selectedContractType" defaultLabel="Գործարքի տեսակ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" (onChange)="changeState()" [options]="allStates" [(ngModel)]="selectedStates" defaultLabel="Մարզ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" (onChange)="changeStreets()" [options]="allChangeCityes" [(ngModel)]="selectedCity" defaultLabel="Քաղաք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allYerevanParts" (onChange)="yeravanPartsChange()" [(ngModel)]="selectedYerevanPart" defaultLabel="Համայնք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allStreets" [(ngModel)]="selectedAllStreets" defaultLabel="Փողոց"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="actualUsePlot" [(ngModel)]="selectedActualUsePlot" defaultLabel="Փաստացի օգտագործում"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="siteArea" [(ngModel)]="selectedSiteArea" defaultLabel="Հողի մակերես"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="priceStart" [(ngModel)]="selectedPriceStart" [selectionLimit]="1" defaultLabel="Գինը (սկսած)"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="priceEnd" [(ngModel)]="selectedPriceEnd" [selectionLimit]="1" defaultLabel="Գինը (մինչև)"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="value" [(ngModel)]="selectedValue" [selectionLimit]="1" defaultLabel="Արժույթ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <button (click)="searchHoghamas()">Փնտրել</button>
+      </div>
+    </div>
+
+    <div class="tabs_content" *ngIf="visibleTabNumber === 4">
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" [options]="contractTypes" [(ngModel)]="selectedContractType" defaultLabel="Գործարքի տեսակ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" (onChange)="changeState()" [options]="allStates" [(ngModel)]="selectedStates" defaultLabel="Մարզ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" (onChange)="changeStreets()" [options]="allChangeCityes" [(ngModel)]="selectedCity" defaultLabel="Քաղաք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allYerevanParts" (onChange)="yeravanPartsChange()" [(ngModel)]="selectedYerevanPart" defaultLabel="Համայնք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allStreets" [(ngModel)]="selectedAllStreets" defaultLabel="Փողոց"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="actualUse" [(ngModel)]="selectedActualUse" defaultLabel="Ոլորտ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="priceStart" [(ngModel)]="selectedPriceStart" [selectionLimit]="1" defaultLabel="Գինը (սկսած)"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name"  [options]="priceEnd" [(ngModel)]="selectedPriceEnd" [selectionLimit]="1" defaultLabel="Գինը (մինչև)"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="value" [(ngModel)]="selectedValue" [selectionLimit]="1" defaultLabel="Արժույթ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <button (click)="searchBiznes()">Փնտրել</button>
+      </div>
+    </div>
+
+    <div class="tabs_content" *ngIf="visibleTabNumber === 5">
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" [options]="contractTypes" [(ngModel)]="selectedContractType" defaultLabel="Գործարքի տեսակ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" (onChange)="changeState()" [options]="allStates" [(ngModel)]="selectedStates" defaultLabel="Մարզ"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" (onChange)="changeStreets()" [options]="allChangeCityes" [(ngModel)]="selectedCity" defaultLabel="Քաղաք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allYerevanParts" (onChange)="yeravanPartsChange()" [(ngModel)]="selectedYerevanPart" defaultLabel="Համայնք"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <p-multiSelect [style]="{'width': '100%'}" optionLabel="name" [options]="allStreets" [(ngModel)]="selectedAllStreets" defaultLabel="Փողոց"></p-multiSelect>
+      </div>
+
+      <div class="part">
+        <button (click)="searchNorakaruyc()">Փնտրել</button>
+      </div>
+    </div>
+
+    <div class="tabs_content" *ngIf="visibleTabNumber === 6">
+      <input type="text" class="all_width" [(ngModel)]="id">
+
+      <div class="part">
+        <button (click)="searchID()">Փնտրել</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--Tabs HTML end-->
+
+<!--Maps Section HTML start-->
+<section class="all_maps">
+  <div class="maps_category">
+    <ul>
+      <li><p-multiSelect [style]="{'width': '100%'}" [options]="contractTypes" [(ngModel)]="selectedContractType" defaultLabel="Գործարքի տեսակ"></p-multiSelect></li>
+
+      <li *ngFor="let item of buildingTypes, let j = index" (click)="changeMap(j)" class="uppercase"  [ngClass]="{'active': j === visibleMapNumber}" >
+        <img src="{{item.url}}" alt="">
+        {{item.title}}
+      </li>
+    </ul>
+  </div>
+  <div class="maps">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH"></iframe>
+  </div>
+</section>
+<!--Maps Section HTML end-->
+
+<!--Found HTML start-->
+<section class="found" *ngIf="foundDataID">
+  <div class="content">
+    <h3>Փնտրված հայտարարություններ</h3>
+    <div class="top_flex">
+      <ul>
+        <li *ngFor="let found of foundDataID">
+          <a (click)="changeServiceHomeData(found.phoneNumber, found.harmarutyunner, found.otherInfo, found.img, found.additionalInfo )"
+             [routerLink]="['/',found.id, found.type]"
+             [queryParams]="{new: found.new,
+                             top: found.top,
+                             hardaranq: found.hardaranq,
+                             naxagic: found.naxagic,
+                             cack: found.cack,
+                             arastag: found.arastag,
+                             phoneNumber: found.phoneNumber,
+                             map: found.map,
+                             harmarutyunner: found.harmarutyunner,
+                             otherInfo: found.otherInfo,
+                             contractType: found.contractType,
+                             price: found.price,
+                             state: found.state,
+                             city: found.city,
+                             street: found.street,
+                             area: found.area,
+                             value: found.value,
+                             builtType: found.builtType,
+                             roomsCount: found.roomsCount,
+                             floor: found.floor,
+                             img: found.img
+                             }">
+            <div class="img">
+              <img src="{{found.img[0].source}}" alt="">
+            </div>
+            <div class="text">
+              <div class="addidional">
+                <span>Realty Consult ID - {{found.id}}</span>
+                <span class="attention">Գործարքի տեսակ - {{found.contractType}}</span>
+                <span class="map">{{found.state}}/{{found.city}}/{{found.street}}</span>
+                <span class="info">{{found.otherInfo[0]}}</span>
+              </div>
+              <div class="main_info">
+                <span>Սենյակ - {{found.roomsCount}}</span>
+                <span>Հ/Հ - {{ found.floor}}</span>
+                <span>Մակերես {{found.area}}քմ</span>
+                <span>{{found.contractType}} {{found.price}}{{found.value}}</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--Found HTML end-->
+
+<!--Found HTML start-->
+<section class="found" *ngIf="allFoundBnakaran">
+  <div class="content">
+    <h3>Փնտրված հայտարարություններ</h3>
+    <div class="top_flex">
+      <ul>
+        <li *ngFor="let found of allFoundBnakaran">
+          <a (click)="changeServiceHomeData(found.phoneNumber, found.harmarutyunner, found.otherInfo, found.img, found.additionalInfo )"
+             [routerLink]="['/',found.id, found.type]"
+             [queryParams]="{new: found.new,
+                             top: found.top,
+                             hardaranq: found.hardaranq,
+                             naxagic: found.naxagic,
+                             cack: found.cack,
+                             arastag: found.arastag,
+                             phoneNumber: found.phoneNumber,
+                             map: found.map,
+                             harmarutyunner: found.harmarutyunner,
+                             otherInfo: found.otherInfo,
+                             contractType: found.contractType,
+                             price: found.price,
+                             state: found.state,
+                             city: found.city,
+                             street: found.street,
+                             area: found.area,
+                             value: found.value,
+                             builtType: found.builtType,
+                             roomsCount: found.roomsCount,
+                             floor: found.floor,
+                             img: found.img
+                             }">
+            <div class="img">
+              <img src="{{found.img[0].source}}" alt="">
+            </div>
+            <div class="text">
+              <div class="addidional">
+                <span>Realty Consult ID - {{found.id}}</span>
+                <span class="attention">Գործարքի տեսակ - {{found.contractType}}</span>
+                <span class="map">{{found.state}}/{{found.city}}/{{found.street}}</span>
+                <span class="info">{{found.otherInfo[0]}}</span>
+              </div>
+              <div class="main_info">
+                <span>Սենյակ - {{found.roomsCount}}</span>
+                <span>Հ/Հ - {{ found.floor}}</span>
+                <span>Մակերես {{found.area}}քմ</span>
+                <span>{{found.contractType}} {{found.price}}{{found.value}}</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--Found HTML end-->
+
+<!--Found HTML start-->
+<section class="found" *ngIf="allFoundHoghamas">
+  <div class="content">
+    <h3>Փնտրված հայտարարություններ</h3>
+    <div class="top_flex">
+      <ul>
+        <li *ngFor="let found of allFoundHoghamas">
+          <a (click)="changeServiceHomeData(found.phoneNumber, found.harmarutyunner, found.otherInfo, found.img, found.additionalInfo )"
+             [routerLink]="['/',found.id, found.type]"
+             [queryParams]="{new: found.new,
+                             top: found.top,
+                             hardaranq: found.hardaranq,
+                             naxagic: found.naxagic,
+                             cack: found.cack,
+                             arastag: found.arastag,
+                             phoneNumber: found.phoneNumber,
+                             map: found.map,
+                             harmarutyunner: found.harmarutyunner,
+                             otherInfo: found.otherInfo,
+                             contractType: found.contractType,
+                             price: found.price,
+                             state: found.state,
+                             city: found.city,
+                             street: found.street,
+                             area: found.area,
+                             value: found.value,
+                             builtType: found.builtType,
+                             roomsCount: found.roomsCount,
+                             floor: found.floor,
+                             img: found.img
+                             }">
+            <div class="img">
+              <img src="{{found.img[0].source}}" alt="">
+            </div>
+            <div class="text">
+              <div class="addidional">
+                <span>Realty Consult ID - {{found.id}}</span>
+                <span class="attention">Գործարքի տեսակ - {{found.contractType}}</span>
+                <span class="map">{{found.state}}/{{found.city}}/{{found.street}}</span>
+                <span class="info">{{found.otherInfo[0]}}</span>
+              </div>
+              <div class="main_info">
+                <span>Սենյակ - {{found.roomsCount}}</span>
+                <span>Հ/Հ - {{ found.floor}}</span>
+                <span>Մակերես {{found.area}}քմ</span>
+                <span>{{found.contractType}} {{found.price}}{{found.value}}</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--Found HTML end-->
+
+<!--Found HTML start-->
+<section class="found" *ngIf="allFoundArandznatun">
+  <div class="content">
+    <h3>Փնտրված հայտարարություններ</h3>
+    <div class="top_flex">
+      <ul>
+        <li *ngFor="let found of allFoundArandznatun">
+          <a (click)="changeServiceHomeData(found.phoneNumber, found.harmarutyunner, found.otherInfo, found.img, found.additionalInfo )"
+             [routerLink]="['/',found.id, found.type]"
+             [queryParams]="{new: found.new,
+                             top: found.top,
+                             hardaranq: found.hardaranq,
+                             naxagic: found.naxagic,
+                             cack: found.cack,
+                             arastag: found.arastag,
+                             phoneNumber: found.phoneNumber,
+                             map: found.map,
+                             harmarutyunner: found.harmarutyunner,
+                             otherInfo: found.otherInfo,
+                             contractType: found.contractType,
+                             price: found.price,
+                             state: found.state,
+                             city: found.city,
+                             street: found.street,
+                             area: found.area,
+                             value: found.value,
+                             builtType: found.builtType,
+                             roomsCount: found.roomsCount,
+                             floor: found.floor,
+                             img: found.img
+                             }">
+            <div class="img">
+              <img src="{{found.img[0].source}}" alt="">
+            </div>
+            <div class="text">
+              <div class="addidional">
+                <span>Realty Consult ID - {{found.id}}</span>
+                <span class="attention">Գործարքի տեսակ - {{found.contractType}}</span>
+                <span class="map">{{found.state}}/{{found.city}}/{{found.street}}</span>
+                <span class="info">{{found.otherInfo[0]}}</span>
+              </div>
+              <div class="main_info">
+                <span>Սենյակ - {{found.roomsCount}}</span>
+                <span>Հ/Հ - {{ found.floor}}</span>
+                <span>Մակերես {{found.area}}քմ</span>
+                <span>{{found.contractType}} {{found.price}}{{found.value}}</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--Found HTML end-->
+
+<!--Found HTML start-->
+<section class="found" *ngIf="allFoundKomercion">
+  <div class="content">
+    <h3>Փնտրված հայտարարություններ</h3>
+    <div class="top_flex">
+      <ul>
+        <li *ngFor="let found of allFoundKomercion">
+          <a (click)="changeServiceHomeData(found.phoneNumber, found.harmarutyunner, found.otherInfo, found.img, found.additionalInfo )"
+             [routerLink]="['/',found.id, found.type]"
+             [queryParams]="{new: found.new,
+                             top: found.top,
+                             hardaranq: found.hardaranq,
+                             naxagic: found.naxagic,
+                             cack: found.cack,
+                             arastag: found.arastag,
+                             phoneNumber: found.phoneNumber,
+                             map: found.map,
+                             harmarutyunner: found.harmarutyunner,
+                             otherInfo: found.otherInfo,
+                             contractType: found.contractType,
+                             price: found.price,
+                             state: found.state,
+                             city: found.city,
+                             street: found.street,
+                             area: found.area,
+                             value: found.value,
+                             builtType: found.builtType,
+                             roomsCount: found.roomsCount,
+                             floor: found.floor,
+                             img: found.img
+                             }">
+            <div class="img">
+              <img src="{{found.img[0].source}}" alt="">
+            </div>
+            <div class="text">
+              <div class="addidional">
+                <span>Realty Consult ID - {{found.id}}</span>
+                <span class="attention">Գործարքի տեսակ - {{found.contractType}}</span>
+                <span class="map">{{found.state}}/{{found.city}}/{{found.street}}</span>
+                <span class="info">{{found.otherInfo[0]}}</span>
+              </div>
+              <div class="main_info">
+                <span>Սենյակ - {{found.roomsCount}}</span>
+                <span>Հ/Հ - {{ found.floor}}</span>
+                <span>Մակերես {{found.area}}քմ</span>
+                <span>{{found.contractType}} {{found.price}}{{found.value}}</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--Found HTML end-->
+
+<!--Found HTML start-->
+<section class="found" *ngIf="allFoundBiznes">
+  <div class="content">
+    <h3>Փնտրված հայտարարություններ</h3>
+    <div class="top_flex">
+      <ul>
+        <li *ngFor="let found of allFoundBiznes">
+          <a (click)="changeServiceHomeData(found.phoneNumber, found.harmarutyunner, found.otherInfo, found.img, found.additionalInfo )"
+             [routerLink]="['/',found.id, found.type]"
+             [queryParams]="{new: found.new,
+                             top: found.top,
+                             hardaranq: found.hardaranq,
+                             naxagic: found.naxagic,
+                             cack: found.cack,
+                             arastag: found.arastag,
+                             phoneNumber: found.phoneNumber,
+                             map: found.map,
+                             harmarutyunner: found.harmarutyunner,
+                             otherInfo: found.otherInfo,
+                             contractType: found.contractType,
+                             price: found.price,
+                             state: found.state,
+                             city: found.city,
+                             street: found.street,
+                             area: found.area,
+                             value: found.value,
+                             builtType: found.builtType,
+                             roomsCount: found.roomsCount,
+                             floor: found.floor,
+                             img: found.img
+                             }">
+            <div class="img">
+              <img src="{{found.img[0].source}}" alt="">
+            </div>
+            <div class="text">
+              <div class="addidional">
+                <span>Realty Consult ID - {{found.id}}</span>
+                <span class="attention">Գործարքի տեսակ - {{found.contractType}}</span>
+                <span class="map">{{found.state}}/{{found.city}}/{{found.street}}</span>
+                <span class="info">{{found.otherInfo[0]}}</span>
+              </div>
+              <div class="main_info">
+                <span>Սենյակ - {{found.roomsCount}}</span>
+                <span>Հ/Հ - {{ found.floor}}</span>
+                <span>Մակերես {{found.area}}քմ</span>
+                <span>{{found.contractType}} {{found.price}}{{found.value}}</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--Found HTML end-->
+
+<!--Found HTML start-->
+<section class="found" *ngIf="allFoundNorakaruyc">
+  <div class="content">
+    <h3>Փնտրված հայտարարություններ</h3>
+    <div class="top_flex">
+      <ul>
+        <li *ngFor="let found of allFoundNorakaruyc">
+          <a (click)="changeServiceHomeData(found.phoneNumber, found.harmarutyunner, found.otherInfo, found.img, found.additionalInfo )"
+             [routerLink]="['/',found.id, found.type]"
+             [queryParams]="{new: found.new,
+                             top: found.top,
+                             hardaranq: found.hardaranq,
+                             naxagic: found.naxagic,
+                             cack: found.cack,
+                             arastag: found.arastag,
+                             phoneNumber: found.phoneNumber,
+                             map: found.map,
+                             harmarutyunner: found.harmarutyunner,
+                             otherInfo: found.otherInfo,
+                             contractType: found.contractType,
+                             price: found.price,
+                             state: found.state,
+                             city: found.city,
+                             street: found.street,
+                             area: found.area,
+                             value: found.value,
+                             builtType: found.builtType,
+                             roomsCount: found.roomsCount,
+                             floor: found.floor,
+                             img: found.img
+                             }">
+            <div class="img">
+              <img src="{{found.img[0].source}}" alt="">
+            </div>
+            <div class="text">
+              <div class="addidional">
+                <span>Realty Consult ID - {{found.id}}</span>
+                <span class="attention">Գործարքի տեսակ - {{found.contractType}}</span>
+                <span class="map">{{found.state}}/{{found.city}}/{{found.street}}</span>
+                <span class="info">{{found.otherInfo[0]}}</span>
+              </div>
+              <div class="main_info">
+                <span>Սենյակ - {{found.roomsCount}}</span>
+                <span>Հ/Հ - {{ found.floor}}</span>
+                <span>Մակերես {{found.area}}քմ</span>
+                <span>{{found.contractType}} {{found.price}}{{found.value}}</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--Found HTML end-->
+
+<!--Top HTML start-->
+<section class="top">
+  <div class="content">
+    <h3>Լավագույն հայտարարություններ</h3>
+    <div class="top_flex">
+      <ul>
+        <li *ngFor="let top of allTop">
+
+          <a (click)="changeServiceHomeData(top.phoneNumber, top.harmarutyunner, top.otherInfo, top.img, top.additionalInfo )" [routerLink]="['/',top.id, top.type]"
+             [queryParams]="{new: top.new,
+                             top: top.top,
+                             hardaranq: top.hardaranq,
+                             naxagic: top.naxagic,
+                             cack: top.cack,
+                             arastag: top.arastag,
+                             phoneNumber: top.phoneNumber,
+                             map: top.map,
+                             harmarutyunner: top.harmarutyunner,
+                             otherInfo: top.otherInfo,
+                             contractType: top.contractType,
+                             price: top.price,
+                             state: top.state,
+                             city: top.city,
+                             street: top.street,
+                             area: top.area,
+                             value: top.value,
+                             builtType: top.builtType,
+                             roomsCount: top.roomsCount,
+                             floor: top.floor,
+                             img: top.img
+                             }">
+            <div class="img">
+              <img src="{{top.img[0].source}}" alt="">
+            </div>
+            <div class="text">
+              <p>{{top.type}}</p>
+              <p>{{top.price}} {{top.value}}</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--Top HTML end-->
+
+

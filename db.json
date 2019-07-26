@@ -1,0 +1,1168 @@
+{
+  "buildingTypes": [
+    { "id": 1,
+      "title": "բնակարան",
+      "url": "http://irealty.am/assets/marker-icons-new/HeadMenu/Bnakaran.png",
+      "visible": true
+    },    {
+      "id": 2,
+      "title": "առանձնատուն",
+      "url": "http://irealty.am/assets/marker-icons-new/HeadMenu/Arandznatun.png",
+      "visible": false
+    },    {
+      "id": 3,
+      "title": "կոմերցիոն",
+      "url": "http://irealty.am/assets/marker-icons-new/HeadMenu/Arandznatun.png",
+      "visible": false
+    },    {
+      "id": 4,
+      "title": "հողամաս",
+      "url": "http://irealty.am/assets/marker-icons-new/HeadMenu/Hoghamas.png",
+      "visible": false
+    },    {
+      "id": 5,
+      "title": "բիզնես",
+      "url": "http://irealty.am/assets/marker-icons-new/HeadMenu/Business.png",
+      "visible": false
+    },    {
+      "id": 6,
+      "title": "նորակառույցներ",
+      "url": "http://irealty.am/assets/marker-icons-new/HeadMenu/Business.png",
+      "visible": false
+    },    {
+      "id": 7,
+      "title": "կոդ",
+      "url": "http://irealty.am/assets/marker-icons-new/HeadMenu/Code.png",
+      "visible": false
+    }
+  ],
+  "contractTypes": [
+    {
+      "label": "Առք",
+      "value": {
+        "id": 1,
+        "name": "Առք",
+        "code": "Առք"
+      }
+    },
+    {
+      "label": "Վարձակալություն",
+      "value": {
+        "id": 2,
+        "name": "Վարձակալություն",
+        "code": "Վարձակալություն"
+      }
+    },
+    {
+      "label": "Օրավարձով",
+      "value": {
+        "id": 3,
+        "name": "Օրավարձով",
+        "code": "Օրավարձով"
+      }
+    }
+  ],
+  "allStates": [
+    {
+      "label": "Երևան",
+      "value": {
+        "id": 1,
+        "name": "Երևան",
+        "code": "Yerevan"
+      }
+    },
+    {
+      "label": "Արագածոտն",
+      "value": {
+        "id": 2,
+        "name": "Արագածոտն",
+        "code": "Aragatsotn"
+      }
+    },
+    {
+      "label": "Արարատ",
+      "value": {
+        "id": 3,
+        "name": "Արարատ",
+        "code": "Ararat"
+      }
+    }, {
+      "label": "Արմավիր",
+      "value": {
+        "id": 4,
+        "name": "Արմավիր",
+        "code": "Armavir"
+      }
+    }, {
+      "label": "Գեղարքունիք",
+      "value": {
+        "id": 5,
+        "name": "Գեղարքունիք",
+        "code": "Gegharkunik"
+      }
+    }, {
+      "label": "Կոտայք",
+      "value": {
+        "id": 6,
+        "name": "Կոտայք",
+        "code": "Kotayk"
+      }
+    }, {
+      "label": "Շիրակ",
+      "value": {
+        "id": 7,
+        "name": "Շիրակ",
+        "code": "Shirak"
+      }
+    }, {
+      "label": "Լոռի",
+      "value": {
+        "id": 8,
+        "name": "Լոռի",
+        "code": "Lori"
+      }
+    }, {
+      "label": "Սյունիք",
+      "value": {
+        "id": 9,
+        "name": "Սյունիք",
+        "code": "Syunik"
+      }
+    }, {
+      "label": "Վայոց ձոր",
+      "value": {
+        "id": 10,
+        "name": "Վայոց ձոր",
+        "code": "VayocDzor"
+      }
+    }, {
+      "label": "Տավուշ",
+      "value": {
+        "id": 11,
+        "name": "Տավուշ",
+        "code": "Tavush"
+      }
+    }
+  ],
+  "allAragatsotnCities": [
+    {
+      "name": "Աշտարակ",
+      "code": "Ashtarak",
+      "index": 1
+    },    {
+      "name": "Թալին",
+      "code": "Talin",
+      "index": 2
+    },    {
+      "name": "Ապարան",
+      "code": "Aparan",
+      "index": 3
+    }
+  ],
+  "allAraratCities": [
+    {
+      "name": "Արարատ",
+      "code": "Ararat",
+      "index": 1
+    },    {
+      "name": "Արտաշատ",
+      "code": "Artashat",
+      "index": 2
+    },    {
+      "name": "Մասիս",
+      "code": "Masis",
+      "index": 3
+    }
+  ],
+  "allArmavirCities": [
+    {
+      "name": "Արմավիր",
+      "code": "Armavir",
+      "index": 1
+    },    {
+      "name": "Վաղարշապատ",
+      "code": "Vagharshapat",
+      "index": 2
+    },    {
+      "name": "Մեծամոր",
+      "code": "Metsamor",
+      "index": 3
+    }
+  ],
+  "siteArea": [
+    {
+      "name": "Մինչև 300",
+      "code": "Մինչև 300",
+      "index": 1
+    },    {
+      "name": "300-500",
+      "code": "300-500",
+      "index": 2
+    },    {
+      "name": "500-1000",
+      "code": "500-1000",
+      "index": 3
+    },    {
+      "name": "1000+",
+      "code": "1000+",
+      "index": 4
+    }
+  ],
+  "palaceFloor": [
+    {
+      "name": 1,
+      "code": 1,
+      "index": 1
+    },    {
+      "name": 2,
+      "code": 2,
+      "index": 2
+    },    {
+      "name": 3,
+      "code": 3,
+      "index": 3
+    },    {
+      "name": 4,
+      "code": 4,
+      "index": 4
+    },    {
+      "name": 5,
+      "code": 5,
+      "index": 5
+    },   {
+      "name": 6,
+      "code": 6,
+      "index": 6
+    },    {
+      "name": 7,
+      "code": 7,
+      "index": 7
+    },    {
+      "name": 8,
+      "code": 8,
+      "index": 8
+    },    {
+      "name": 9,
+      "code": 9,
+      "index": 9
+    },    {
+      "name": 10,
+      "code": 10,
+      "index": 10
+    },    {
+      "name": 11,
+      "code": 11,
+      "index": 11
+    },    {
+      "name": 12,
+      "code": 12,
+      "index": 12
+    },    {
+      "name": 13,
+      "code": 13,
+      "index": 13
+    },    {
+      "name": 14,
+      "code": 14,
+      "index": 14
+    },    {
+      "name": 15,
+      "code": 15,
+      "index": 15
+    },    {
+      "name": 16,
+      "code": 16,
+      "index": 16
+    },    {
+      "name": 17,
+      "code": 17,
+      "index": 17
+    },    {
+      "name": 18,
+      "code": 18,
+      "index": 18
+    },    {
+      "name": 19,
+      "code": 19,
+      "index": 19
+    },    {
+      "name": 20,
+      "code": 20,
+      "index": 20
+    }
+  ],
+  "allYerevanPart": [
+    {
+      "name": "Կենտրոն",
+      "code": "Kentron",
+      "index": 1
+    },    {
+      "name": "Աջապնյակ",
+      "code": "Ajapnyak",
+      "index": 2
+    },    {
+      "name": "Դավիթաշեն",
+      "code": "Davitashen",
+      "index": 3
+    }
+  ],
+  "yerevanKentronStreets": [
+    {
+      "name": "Սարյան",
+      "code": "Saryan",
+      "index": 1
+    },    {
+      "name": "Բաղրամյան",
+      "code": "Bagramyan",
+      "index": 2
+    },    {
+      "name": "Խանջյան",
+      "code": "Khanjyan",
+      "index": 3
+    }
+  ],
+  "yerevanAjapnyanStreets": [
+    {
+      "name": "Աբելյան",
+      "code": "Abelyan",
+      "index": 1
+    },    {
+      "name": "Ալիխանյան",
+      "code": "Alikhanyan",
+      "index": 2
+    }
+  ],
+  "yerevanDavitashenStreets": [
+    {
+      "name": "Դավթաշեն 1",
+      "code": "Davtashen 1",
+      "index": 1
+    },    {
+      "name": "Դավթաշեն 2",
+      "code": "Davtashen 2",
+      "index": 2
+    }
+  ],
+  "allCityes": [
+  {
+    "Aragatsotn": ["Աշտարակ", "Թալին", "Ապարան"],
+    "Ararat": ["Արարատ", "Արտաշատ", "Մասիս"],
+    "Armavir": ["Արմավիր", "Վաղարշապատ", "Մեծամոր"],
+    "Gegharkunik": ["Գավառ", "Մարտունի", "Սևան"],
+    "Lori": ["Ալավերդի", "Թումանյան", "Սպիտակ"],
+    "Kotayk": ["Աբովյան", "Ծաղկաձոր", "Հրազդան"],
+    "Shirak": ["Արթիկ", "Գյումրի", "Մարալիկ"],
+    "Syunik": ["Կապան", "Մեղրի", "Սիսիան"],
+    "VayocDzor": ["Ջերմուկ", "Վայք", "Եղեգնաձոր"],
+    "Tavush": ["Բերդ", "Դիլիջան", "Իջևան"]
+  }
+],
+  "BuiltTypes": [
+    {
+      "label": "Քարե",
+      "value": {
+        "id": 1,
+        "name": "Քարե",
+        "code": "Քարե"
+      }
+    },{
+      "label": "Պանելային",
+      "value": {
+        "id": 2,
+        "name": "Պանելային",
+        "code": "Պանելային"
+      }
+    },{
+      "label": "Միաձույլ",
+      "value": {
+        "id": 3,
+        "name": "Միաձույլ",
+        "code": "Միաձույլ"
+      }
+    }
+  ],
+  "roomsCount": [
+    {
+      "name": "1",
+      "code": "1",
+      "index": 1
+    },    {
+      "name": "2",
+      "code": "2",
+      "index": 2
+    },    {
+      "name": "3",
+      "code": "3",
+      "index": 3
+    },    {
+      "name": "4+",
+      "code": "4+",
+      "index": 4
+    }
+  ],
+  "areaMeter": [
+    {
+      "name": "Մինչև 50",
+      "code": "Մինչև 50",
+      "index": 1
+    },    {
+      "name": "50-80",
+      "code": "50-80",
+      "index": 2
+    },    {
+      "name": "80-120",
+      "code": "80-120",
+      "index": 3
+    },    {
+      "name": "120+",
+      "code": "120+",
+      "index": 4
+    }
+  ],
+  "priceStart": [
+    {
+      "name": "0",
+      "code": "0",
+      "index": 1
+    },    {
+      "name": "10000",
+      "code": "10000",
+      "index": 2
+    },   {
+      "name": "30000",
+      "code": "30000",
+      "index": 3
+    },   {
+      "name": "40000",
+      "code": "40000",
+      "index": 4
+    },   {
+      "name": "50000",
+      "code": "50000",
+      "index": 5
+    },   {
+      "name": "100000",
+      "code": "100000",
+      "index": 6
+    },   {
+      "name": "100000 +",
+      "code": "100000 +",
+      "index": 7
+    }
+  ],
+  "priceEnd": [
+ {
+    "name": "10000",
+    "code": "10000",
+    "index": 1
+  },   {
+    "name": "30000",
+    "code": "30000",
+    "index": 2
+  },   {
+    "name": "40000",
+    "code": "40000",
+    "index": 3
+  },   {
+    "name": "50000",
+    "code": "50000",
+    "index": 4
+  },   {
+    "name": "100000",
+    "code": "100000",
+    "index": 5
+  },   {
+    "name": "100000 +",
+    "code": "100000 +",
+    "index": 6
+  }
+],
+  "value": [
+    {
+      "name": "AMD",
+      "code": "AMD",
+      "index": 1
+    },    {
+      "name": "USD",
+      "code": "USD",
+      "index": 2
+    }
+  ],
+  "allBnakaraneOptions": [
+    {
+      "id": 11,
+      "top": true,
+      "new": true,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093000000","091010101"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Առք",
+      "price": "15000",
+      "state": "Արագածոտն",
+      "city": "Աշտարակ",
+      "street": "Աշտարակեցի",
+      "area": "70",
+      "value": "USD",
+      "builtType": "Քարե",
+      "roomsCount": "4",
+      "floor": "5/2",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    },    {
+      "id": 12,
+      "new": false,
+      "top": false,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093055500","091010101"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Առք",
+      "price": "10000",
+      "state": "Արագածոտն",
+      "city": "Ապարան",
+      "street": "Աբովյան",
+      "area": "50",
+      "value": "USD",
+      "builtType": "Քարե",
+      "roomsCount": "2",
+      "floor": "5/2",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    },    {
+      "id": 13,
+      "new": true,
+      "top": false,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093000000","091011111"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Առք",
+      "price": "19000",
+      "state": "Արագածոտն",
+      "city": "Թալին",
+      "street": "Թումանյան",
+      "area": "70",
+      "value": "USD",
+      "builtType": "Քարե",
+      "roomsCount": "3",
+      "floor": "5/2",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    },   {
+      "id": 14,
+      "new": false,
+      "top": false,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093000000","091011111"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Վարձակալություն",
+      "price": "19000",
+      "state": "Արագածոտն",
+      "city": "Թալին",
+      "street": "Թումանյան",
+      "area": "70",
+      "value": "USD",
+      "builtType": "Քարե",
+      "roomsCount": "3",
+      "floor": "5/2",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    },   {
+      "id": 15,
+      "new": false,
+      "top": true,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093000000","091011111"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Օրավարձով",
+      "price": "19000",
+      "state": "Արագածոտն",
+      "city": "Թալին",
+      "street": "Թումանյան",
+      "area": "70",
+      "value": "USD",
+      "builtType": "Միաձույլ",
+      "roomsCount": "3",
+      "floor": "5/2",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    },   {
+      "id": 16,
+      "new": false,
+      "top": true,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093000000","091011111"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Օրավարձով",
+      "price": "190000",
+      "state": "Արագածոտն",
+      "city": "Թալին",
+      "street": "Թումանյան",
+      "area": "150",
+      "value": "AMD",
+      "builtType": "Պանելային",
+      "roomsCount": "7",
+      "floor": "5/2",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG",
+          "alt": 1
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG",
+          "alt":2
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG",
+          "alt": 3
+        }
+      ]
+    },{
+      "id": 17,
+      "new": false,
+      "top": false,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093000000","091011111"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Օրավարձով",
+      "price": "190000",
+      "state": "Երևան",
+      "city": "Երևան",
+      "part": "Կենտրոն",
+      "street": "Սարյան",
+      "area": "150",
+      "value": "AMD",
+      "builtType": "Պանելային",
+      "roomsCount": "7",
+      "floor": "5/2",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG",
+          "alt": 1
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG",
+          "alt":2
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG",
+          "alt": 3
+        }
+      ]
+    }
+  ],
+  "allArandznatunOptions": [
+    {
+      "id": 21,
+      "top": false,
+      "new": true,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093000000","091010101"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Առք",
+      "price": "15000",
+      "state": "Արագածոտն",
+      "city": "Աշտարակ",
+      "street": "Աշտարակեցի",
+      "area": "70",
+      "placeArea": "120",
+      "value": "USD",
+      "builtType": "Քարե",
+      "roomsCount": "4",
+      "placeFloor": "2",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    },    {
+      "id": 22,
+      "new": false,
+      "top": false,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093055500","091010101"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Առք",
+      "price": "10000",
+      "state": "Արագածոտն",
+      "city": "Ապարան",
+      "street": "Աբովյան",
+      "area": "50",
+      "placeArea": "120",
+      "value": "USD",
+      "builtType": "Քարե",
+      "roomsCount": "2",
+      "placeFloor": "5",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    }
+    ],
+  "allKomercionOptions": [
+    {
+      "id": 31,
+      "top": false,
+      "new": true,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093000000","091010101"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Առք",
+      "price": "15000",
+      "state": "Արագածոտն",
+      "city": "Աշտարակ",
+      "street": "Աշտարակեցի",
+      "area": "70",
+      "placeArea": "120",
+      "value": "USD",
+      "builtType": "Քարե",
+      "roomsCount": "4",
+      "placeFloor": "2",
+      "actualUse": "Առևտրային",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    },    {
+      "id": 32,
+      "new": false,
+      "top": false,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093055500","091010101"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Առք",
+      "price": "10000",
+      "state": "Արագածոտն",
+      "city": "Ապարան",
+      "street": "Աբովյան",
+      "actualUse": "Հասրակական",
+      "area": "50",
+      "placeArea": "120",
+      "value": "USD",
+      "builtType": "Քարե",
+      "roomsCount": "2",
+      "placeFloor": "5",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    }
+  ],
+  "allHoghamasOptions": [
+    {
+      "id": 41,
+      "new": false,
+      "top": false,
+      "phoneNumber": ["093055500","091010101"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "contractType": "Առք",
+      "price": "10000",
+      "state": "Արագածոտն",
+      "city": "Ապարան",
+      "street": "Աբովյան",
+      "actualUseThePlot": "Հասրակական",
+      "placeArea": "120",
+      "value": "USD",
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    },    {
+      "id": 42,
+      "new": false,
+      "top": false,
+      "phoneNumber": ["093055500","091010101"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "contractType": "Առք",
+      "price": "10000",
+      "state": "Արագածոտն",
+      "city": "Ապարան",
+      "street": "Աբովյան",
+      "actualUseThePlot": "Հասրակական",
+      "placeArea": "120",
+      "value": "USD",
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    }
+  ],
+  "allBiznesOptions": [
+    {
+      "id": 51,
+      "top": false,
+      "new": true,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093000000","091010101"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Առք",
+      "price": "15000",
+      "state": "Արագածոտն",
+      "city": "Աշտարակ",
+      "street": "Աշտարակեցի",
+      "area": "70",
+      "placeArea": "120",
+      "value": "USD",
+      "builtType": "Քարե",
+      "roomsCount": "4",
+      "placeFloor": "2",
+      "actualUse": "Առևտրային",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    },    {
+      "id": 52,
+      "new": false,
+      "top": false,
+      "hardaranq": "Լավ",
+      "naxagic": "Ստալինյան",
+      "cack": "Երկաթ/բետեն, փայտե",
+      "arastag": "3.4",
+      "phoneNumber": ["093055500","091010101"],
+      "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+      "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+      "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+      "type": "բնակարան",
+      "contractType": "Առք",
+      "price": "10000",
+      "state": "Արագածոտն",
+      "city": "Ապարան",
+      "street": "Աբովյան",
+      "actualUse": "Հասրակական",
+      "area": "50",
+      "placeArea": "120",
+      "value": "USD",
+      "builtType": "Քարե",
+      "roomsCount": "2",
+      "placeFloor": "5",
+      "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+      "img": [
+        {
+          "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+        },
+        {
+          "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+        }
+      ]
+    }
+  ],
+  "allNorakruycOptions": [
+  {
+    "id": 51,
+    "top": false,
+    "new": true,
+    "hardaranq": "Լավ",
+    "naxagic": "Ստալինյան",
+    "cack": "Երկաթ/բետեն, փայտե",
+    "arastag": "3.4",
+    "phoneNumber": ["093000000","091010101"],
+    "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+    "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+    "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+    "type": "բնակարան",
+    "contractType": "Առք",
+    "price": "15000",
+    "state": "Արագածոտն",
+    "city": "Աշտարակ",
+    "street": "Աշտարակեցի",
+    "area": "70",
+    "placeArea": "120",
+    "value": "USD",
+    "builtType": "Քարե",
+    "roomsCount": "4",
+    "placeFloor": "2",
+    "actualUse": "Առևտրային",
+    "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+    "img": [
+      {
+        "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+      },
+      {
+        "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+      },
+      {
+        "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+      }
+    ]
+  },    {
+    "id": 52,
+    "new": false,
+    "top": false,
+    "hardaranq": "Լավ",
+    "naxagic": "Ստալինյան",
+    "cack": "Երկաթ/բետեն, փայտե",
+    "arastag": "3.4",
+    "phoneNumber": ["093055500","091010101"],
+    "map": "https://www.google.com/maps/d/embed?mid=1edNySWzg4eDF8aPBpmWfS96uukcwvqlH",
+    "harmarutyunner": ["Ջուր", "Կոյուղի", "Գազ"],
+    "otherInfo": ["Բնակարանը գազաֆիկացված է, առկա է ջեռուցման համակարգ, օդորակիչ","Առկա է բաց պատշգամբ, շքապատշգամբ, խորդանոց:","Մուտքի դուռը՝երկաթյա՝փայտե երեսապատումով, ներքին դռները՝փայտե, պատուհանների շրջանակները՝մետաղապլաստե:", "Բնակարանի ներքին հարդարանանքը գտնվում է լավ վիճակում, իրականացված է որակյալ շինանյութերի և հարդարման տարրերի կիրառմամբ: "],
+    "type": "բնակարան",
+    "contractType": "Առք",
+    "price": "10000",
+    "state": "Արագածոտն",
+    "city": "Ապարան",
+    "street": "Աբովյան",
+    "actualUse": "Հասրակական",
+    "area": "50",
+    "placeArea": "120",
+    "value": "USD",
+    "builtType": "Քարե",
+    "roomsCount": "2",
+    "placeFloor": "5",
+    "additionalInfo": ["Ջուր", "Էլ․հոսանք", "Գազաֆիկացվա", "Ջեռուցում", "Բաց պատշգամբ"],
+    "img": [
+      {
+        "source": "http://irealty.am/uploads/1559630469624DSC00010.JPG"
+      },
+      {
+        "source": "http://irealty.am/uploads/1561381165617DSC00013.JPG"
+      },
+      {
+        "source": "http://irealty.am/uploads/1561381166476DSC00010.JPG"
+      }
+    ]
+  }
+],
+  "actualUse": [
+    {
+      "name": "Հասարակական",
+      "code": "Hasarakakan",
+      "index": 1
+    },    {
+      "name": "Առևտրային",
+      "code": "Arevtrayin",
+      "index": 2
+    },    {
+      "name": "Տեխսպասարկում",
+      "code": "Texspasarkum",
+      "index": 3
+    },    {
+      "name": "Բենզալցակայան",
+      "code": "Benzalcakayan",
+      "index": 4
+    },    {
+      "name": "ԱԳԼՃԿ",
+      "code": "AGLCHK",
+      "index": 5
+    },    {
+      "name": "Արտադրական",
+      "code": "Artadrakan",
+      "index": 6
+    },    {
+      "name": "Անասնապահական",
+      "code": "Anasnapahakan",
+      "index": 7
+    }
+  ],
+  "actualUseThePlot": [
+    {
+      "name": "Հասարակական",
+      "code": "Hasarakakan",
+      "index": 1
+    },    {
+      "name": "Խառը կառուցապատման",
+      "code": "Xar karucapatman",
+      "index": 2
+    },    {
+      "name": "Ընդհանուր օգտագործման",
+      "code": "ndhanur ogtagortsman",
+      "index": 3
+    },    {
+      "name": "Հատուկ պահպանվող տարածքներ",
+      "code": "hatuk pahpanvog taracqner",
+      "index": 4
+    },    {
+      "name": "Այգի",
+      "code": "aygi",
+      "index": 5
+    },    {
+      "name": "Արոտավայր",
+      "code": "Arotavayr",
+      "index": 6
+    },    {
+      "name": "Անասնապահական",
+      "code": "Anasnapahakan",
+      "index": 7
+    }
+  ],
+    "profile": { "name": "typicode" }
+}

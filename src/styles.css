@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(../node_modules/normalize.css/normalize.css);
+* {
+  outline: none; }
+
+body {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+body a, body a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: inherit; }
+
+.content {
+  max-width: 95%;
+  width: 1300px;
+  margin: auto; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=styles.css.map */

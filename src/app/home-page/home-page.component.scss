@@ -1,0 +1,50 @@
+@import "../../styles/variable";
+
+//Slider CSS start
+.slider{
+  position: relative;
+  width: 100%;
+  height: $headerHeight;
+  .img{
+    width: 100%;
+    max-height: 100%;
+    img{
+      width: 100%;
+      height: $headerHeight;
+      object-fit: cover;
+      object-position: center;
+      position: relative;
+      animation-name: example;
+      animation-duration: .3s;
+      animation-direction: reverse;
+    }
+  }
+}
+.prev, .next{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.prev{
+  left: 10px;
+  background-image: url("../../assets/img/prev.png");
+}
+.next{
+  right: 10px;
+  background-image: url("../../assets/img/next.png");
+}
+
+@keyframes example {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+//Slider CSS end
